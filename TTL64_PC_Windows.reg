@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+;Меняем TTL на 64 в том случае если раздаёт интернет компьютер на Windows, то есть МЫ
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\Tcpip\Parameters]
+"DefaultTTL"=dword:00000040
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\Tcpip6\Parameters]
+"DefaultTTL"=dword:00000040

@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+;Меняем TTL на 65 в том случае если раздаёт интернет телефон на Android или iOS
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\Tcpip\Parameters]
+"DefaultTTL"=dword:00000041
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\Tcpip6\Parameters]
+"DefaultTTL"=dword:00000041
